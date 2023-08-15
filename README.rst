@@ -29,9 +29,12 @@ Build this technical note
 
 You can clone this repository and build the technote locally with `Sphinx`_:
 
+.. code-block:: docker
+    docker compose up
+
 .. code-block:: bash
 
-   git clone https://github.com/lsst-sitcom/sitcomtn-087
+   git clone --recurse-submodules https://github.com/lsst-sitcom/sitcomtn-087
    cd sitcomtn-087
    pip install -r requirements.txt
    make html
