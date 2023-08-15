@@ -1,0 +1,43 @@
+---
+CAL-001:
+  name: "Install calibration hardware (laser, projector, CBP)"
+  short_name: 'install calibration hardware'
+  comment: "Two weeks prior the installation of M1M3"
+  description: "Installation of all calibration hardware on the summit. The date is set to M1M3 install minus 2 weeks"
+  aka:
+  - CALHWINSTALL
+  level: 3
+  # Jira ticket to complete assoiated milestone
+  jira: "DM-ZZZZZ"
+  # Jira ticket to create test plan
+  jira_testplan: DM-YYYYY
+  # DM/ST TR Test plan and report
+  test-spec: "DMTR-XXX"
+CAL-002:
+  name: 'Functional testing of calibration hardware'
+  short_name: 'Functional testing of calibration hardware'
+  comment: "One month prior to First Photon"
+  description: "functional testing of the calibration hardware. The date is set to First Photon minus 1 month"
+  aka:
+  - CALHWTESTING
+  level: 3
+  # Jira ticket to complete assoiated milestone
+  jira: "DM-ZZZZZ"
+  # Jira ticket to create test plan
+  jira_testplan: DM-YYYYY
+  # DM/ST TR Test plan and report
+  test-spec: "DMTR-XXX"
+CAL-002:
+  name: 'Functional testing of calibration hardware'
+  short_name: 'Functional testing of calibration hardware'
+  comment: "One month prior to First Photon"
+  description: "functional testing of the calibration hardware. The date is set to First Photon minus 1 month"
+  aka:
+  - CALHWTESTING
+  level: 3
+  # Jira ticket to complete assoiated milestone
+  jira: "DM-ZZZZZ"
+  # Jira ticket to create test plan
+  jira_testplan: DM-YYYYY
+  # DM/ST TR Test plan and report
+  test-spec: "DMTR-XXX"
