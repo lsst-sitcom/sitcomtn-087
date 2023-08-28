@@ -1,43 +1,162 @@
 ---
 CAL-001:
-  name: "Install calibration hardware (laser, projector, CBP)"
-  short_name: 'install calibration hardware'
-  comment: "Two weeks prior the installation of M1M3"
-  description: "Installation of all calibration hardware on the summit. The date is set to M1M3 install minus 2 weeks"
-  aka:
-  - CALHWINSTALL
-  level: 3
-  # Jira ticket to complete assoiated milestone
-  jira: "DM-ZZZZZ"
-  # Jira ticket to create test plan
-  jira_testplan: DM-YYYYY
-  # DM/ST TR Test plan and report
-  test-spec: "DMTR-XXX"
+  name: "Install Steel Structure"
+  short_name: 'install steel structure'
+  description: "This is part of the calibration screen structure, 
+  but is separable from the frame that supports the screen and is being built in Chile."
+  comment: "Can occur as soon as ready, hopefully in January or February"
+
+SUMMIT-595:
+  name: 'Install Screen structure'
+  description: "This is the aluminum structure that holds the screen. 
+  We want to hold off on installing it as long as possible to reduce the risk of damaging
+  the screen."
+  comment: "Needs to occur 6 weeks prior to the camera installation.
+  In schedule, name is Calibration Screen Support Assembly and Install on Dome "
+
+SUMMIT-2829:
+  name: 'Laser arrives on summit'
+  short_name: 'Laser arrives'
+  description: "When the laser arrives in Chile, it can be unboxed and placed in the optics lab."
+  comment: "Follows shipping of laser approx. 1 month.
+  In schedule, name is Laser System Marine Survey & Cargo Inspection"
+
+SUMMIT-2827:
+  name: 'CBP arrives on summit'
+  short_name: 'CBP arrives'
+  description: "When the laser arrives in Chile, it can be unboxed and placed in the optics lab."
+  comment: "Follows shipping of laser approx. 1 month.
+  In schedule, name is Collimated Beam Projector Marine Survey & Cargo Inspection"
+
+
+T&SC-1208-101050:
+  name: 'Projector arrives on summit'
+  short_name: 'Projector arrives'
+  description: "Projector includes white light (LED) source When the laser arrives in Chile, 
+  it can be unboxed and placed in the optics lab. "
+  comment: "Follows shipping of projector approx. 1 month, following shipment of laser by atleast 2 weeks.
+  By this time, the laser should be out of the optics lab and on the dome. 
+  In schedule, name is White LIght Source Cargo Inspection."
+
 CAL-002:
-  name: 'Functional testing of calibration hardware'
-  short_name: 'Functional testing of calibration hardware'
-  comment: "One month prior to First Photon"
-  description: "functional testing of the calibration hardware. The date is set to First Photon minus 1 month"
-  aka:
-  - CALHWTESTING
-  level: 3
-  # Jira ticket to complete assoiated milestone
-  jira: "DM-ZZZZZ"
-  # Jira ticket to create test plan
-  jira_testplan: DM-YYYYY
-  # DM/ST TR Test plan and report
-  test-spec: "DMTR-XXX"
-CAL-002:
-  name: 'Functional testing of calibration hardware'
-  short_name: 'Functional testing of calibration hardware'
-  comment: "One month prior to First Photon"
-  description: "functional testing of the calibration hardware. The date is set to First Photon minus 1 month"
-  aka:
-  - CALHWTESTING
-  level: 3
-  # Jira ticket to complete assoiated milestone
-  jira: "DM-ZZZZZ"
-  # Jira ticket to create test plan
-  jira_testplan: DM-YYYYY
-  # DM/ST TR Test plan and report
-  test-spec: "DMTR-XXX"
+  name: 'Reflector arrives on summit'
+  short_name: 'Reflector arrives'
+  description: "This can only be installed after the camera is installed so no use to ship it much before it is needed."
+  comment: "Should arrive atleast two weeks before the camera is installed."
+
+
+SUMMIT-619:
+  name: 'Laser is installed'
+  short_name: 'Laser installed'
+  description: "Laser installed on dome on the steel structure platform. Installation to last 2-3 days likely"
+  comment: "Should occur as soon as possible after laser has completed functional testing on ground and the steel structure installed.
+    In schedule, name is Laser Platform Installation and Test"
+
+SUMMIT-650:
+  name: 'CBP is installed'
+  short_name: 'CBP installed'
+  description: "CBP installed on dome on teh steel structure platform. "
+  comment: "Should occur at the same time that the laser is installed
+  Needs fiber to be run from laser to CBP. In schedule, name is CBP Installation and Basic Functional Testing"
+
+SUMMIT-647:
+  name: 'Reflector is installed'
+  short_name: 'Reflector installed'
+  description: "This can only be installed after the camera is installed so no use to ship it much before it is needed. 
+  During the installation, the reflector will be aligned with the optical axis of the telescope. "
+  comment: "Should occur as soon as possible after the camera is installed
+  In schedule, name is Calibration Screen Reflector and Screen Characterization Hardware install on TMA"
+
+SUMMIT-622:
+  name: 'Projector is installed'
+  short_name: 'Projector installed'
+  description: "Installed in center of screen structure. Should occur soon after the screen installed but not at the same time."
+  comment: "This should be done as soon as possible after the screen structure has been installed.
+  Will likely take 1 day to complete and could be pretty tricky.
+  In schedule, name is Calibration Screen White Light Source and Source Selection Installation"
+
+CAL-003:
+  name: 'CBP calibrated'
+  description: "Complete a CBP calibration with the calibration system setup."
+  comment: "This will start as soon as the laser, CBP and CBP calibration system are installed. Will take several weeks/months"
+
+CAL-004:
+  name: 'Screen aligned to telescope'
+  short_name: 'screen aligned'
+  description: "Uses laser tracker to measure the location of the optical axis and then measure the location of the screen on the dome. "
+  comment: "This can be done as soon as the screen has been installed."
+
+CAL-005:
+  name: 'Projector aligned to reflector'
+  short_name: 'projector aligned'
+  description: "need to align the output of the projector to the optical axis (i.e. the reflector)"
+  comment: "This can be done after the installation of the projector and reflector"
+
+SITCOM-123:
+  name: 'Camera Installed'
+  description: 'LSSTCam installed on main telescope. Following this, the cooling system is installed and setup.'
+
+SITCOM_122:
+  name: 'First Photon'
+  description: 'Once M1M3 is installed and the camera is cooled down, the camera can be turned on and start collecting photons.'
+
+CAL-006:
+  name: 'LED Flats Started'
+  description: 'This uses the White Light/LED projector, and a flatfield image will be taken in each of the filters and without a filter.
+  LED flats should be taken every day once they begin.'
+  comment: 'This should occur immediately after the camera is turned on (i.e. First Photon).'
+
+CAL-007:
+  name: 'CBP Pointing Model Confirmed'
+  short_name: 'cbp aligned'
+  description: 'This requires moving the CBP and the telescope so that the CBP is pointing where we expect in reference to LSSTCam.'
+  comment: 'This can occur as soon as the First Photon occurs and can likely occur during the day, but requires use of the laser.
+  Expected duration of a month, as it will require iterations and will likely be interrupted by daytime tasks.'
+
+CAL-008:
+  name: 'Monochromatic Flats 1'
+  description: 'Using the laser for monochromatic flats for the first time. Expect 10 wavelengths in ugrizy+ (without filter)'
+  comment: 'Should occur after the LED flats have started. Should occur at night. 1 partial night duration for each of the filter profiles.'
+
+CAL-009:
+  name: 'Monochromatic Flats 2'
+  description: 'Using laser for monochromatic flats over full range in all filters plus no filter. Priority is running with no filter.'
+  comment: 'Following Monochromatic Flats 1 + 4 weeks. Must be complete before First Light. Should occur in dark dome (night). 
+  1 full night duration for each filter profiles. '
+
+CAL-010:
+  name: 'Monochromatic Flats 3'
+  description: 'Using laser for monochromatic flats over full range in all filters plus no filter.'
+  comment: 'Following First Light. Must be complete prior to ORR complete. Should occur in dark dome (night).
+  1 full nigth duration for each filter profile.'
+
+CAL-011:
+  name: 'On Sky Calibration Tests 1'
+  description: 'Initial dense diteher star field and twilight flats'
+  comment: 'Following LED flats 1, must be complete before On Sky Calibration Tests 2 +2 weeks. Duration 1 partial night.'
+
+CAL-012:
+  name: 'On Sky Calibration Tests 2'
+  description: 'Test the chromatic response fo the camera. More dense dithered star field observations.'
+  comment: 'Occurs atleast 2 weeks after On Sky Calibration Tests 2 adn before First Light. Duration 1 full night.'
+
+CAL-013:
+  name: 'On Sky Calibration Tests 3'
+  description: 'Used for final calibration products. More dense dithered star field observations or observaitons from deep component of science validation surveys.'
+  comment: 'Following First Light. Likely to occur over many nights. Duration ~5 nights.'
+
+CAL-014:
+  name: 'Static CBP Tests 1'
+  description: 'With one pointing of the CBP at the telescope. First priority is with no filter, but all filters preferred. 10 wavelengths per filter.'
+  comment: 'Must be dark. Follows CBP pointing testing and must be complete before First Light. Duration 2 full nights (likely broken up over a week or so).'
+
+CAL-015:
+  name: 'Static CBP Tests 2'
+  description: 'Repeat of Static CBP Tests 1 but over the full wavelength range.'
+  comment: 'Must be dark. Following First Light. Needs to be complete prior to ORR. Duration 6 full nights.'
+
+COMC-0654-1000:
+  name: 'Calibration Products Production Verified'
+  short_name: 'calib products verified'
+  description: "CPP complete, ready for ORR."
+  comment: "Ready for ORR. Name is schedule is COMP: Calibration Products Production Verified."
